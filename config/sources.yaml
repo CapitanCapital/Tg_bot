@@ -1,0 +1,74 @@
+{
+  "sources": [
+    {
+      "id": "bbbreaking",
+      "type": "telegram_web",
+      "url": "https://t.me/s/bbbreaking",
+      "enabled": true,
+      "status": "public_preview_verified"
+    },
+    {
+      "id": "markettwits",
+      "type": "telegram_web",
+      "url": "https://t.me/s/markettwits",
+      "enabled": true,
+      "status": "public_preview_verified"
+    },
+    {
+      "id": "ejdailyru",
+      "type": "telegram_web",
+      "url": "https://t.me/s/ejdailyru",
+      "enabled": true,
+      "status": "public_preview_verified"
+    },
+    {
+      "id": "protechietich",
+      "type": "telegram_web",
+      "url": "https://t.me/s/protechietich",
+      "enabled": true,
+      "status": "public_preview_verified"
+    },
+    {
+      "id": "insider_infor",
+      "type": "telegram_web",
+      "url": "https://t.me/s/insider_infor",
+      "enabled": false,
+      "status": "pending_access"
+    },
+    {
+      "id": "vcnews",
+      "type": "telegram_web",
+      "url": "https://t.me/s/vcnews",
+      "enabled": true,
+      "status": "public_preview_verified"
+    },
+    {
+      "id": "gs-reports",
+      "type": "website",
+      "url": "https://www.goldmansachs.com/insights/reports",
+      "enabled": true,
+      "status": "collector_not_tested"
+    },
+    {
+      "id": "gs-ai",
+      "type": "website",
+      "url": "https://www.goldmansachs.com/insights/artificial-intelligence",
+      "enabled": true,
+      "status": "collector_not_tested"
+    },
+    {
+      "id": "mckinsey-tech-ai",
+      "type": "website",
+      "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/",
+      "enabled": true,
+      "status": "collector_not_tested"
+    },
+    {
+      "id": "mckinsey-finance",
+      "type": "website",
+      "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/",
+      "enabled": true,
+      "status": "collector_not_tested"
+    }
+  ]
+}

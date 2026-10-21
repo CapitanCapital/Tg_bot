@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily Telegram digest prepare Moscow time
+[Timer]
+OnCalendar=*-*-* 08:30:00 Europe/Moscow
+AccuracySec=1s
+RandomizedDelaySec=0
+Persistent=false
+Unit=tg-digest-prepare.service
+[Install]
+WantedBy=timers.target

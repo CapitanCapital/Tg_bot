@@ -1,0 +1,27 @@
+# Secrets and local runtime state
+.env
+.env.*
+!.env.example
+/id_rsa*
+/id_ed25519*
+*.pem
+*.key
+*.session
+*.session-journal
+/data/
+/logs/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+
+# Local deployment and authentication
+/deploy/server.json
+/.codex/
+/.aws/
+/.ssh/
+*.p12
+*.pfx
+.env.bak
+.env.backup

@@ -1,0 +1,16 @@
+[Unit]
+Description=Telegram news digest prepare
+Wants=network-online.target
+After=network-online.target
+[Service]
+Type=oneshot
+User=digest
+Group=digest
+WorkingDirectory=/home/digest/tg-news-digest
+UMask=0077
+ExecStart=/home/digest/tg-news-digest/.venv/bin/python /home/digest/tg-news-digest/src/schedule.py prepare
+TimeoutStartSec=29min
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/home/digest/tg-news-digest/data /home/digest/tg-news-digest/logs

@@ -1,0 +1,26 @@
+{
+  "provider": "Fornex",
+  "host": "YOUR_SERVER_HOST",
+  "ssh_user": "root",
+  "service_user": "digest",
+  "project_dir": "/home/digest/tg-news-digest",
+  "python": "/home/digest/tg-news-digest/.venv/bin/python",
+  "status": "scheduled",
+  "timezone": "Europe/Moscow",
+  "prepare_at": "08:30",
+  "publish_at": "09:00",
+  "timers": [
+    "tg-digest-prepare.timer",
+    "tg-digest-publish.timer"
+  ],
+  "publication_target": "YOUR_TELEGRAM_CHAT_ID",
+  "ambiguous_send_policy": "no_automatic_retry",
+  "llm_provider": "codex",
+  "model": "gpt-6.1-sol",
+  "codex_binary": "/home/digest/.local/bin/codex",
+  "authentication": "saved_ChatGPT_login",
+  "failure_message": "ошибка в проверке и сборе поста",
+  "systemd_dropin": "tg-digest-prepare.service.d/codex.conf",
+  "temporary_schedule": false,
+  "prepare_timeout_seconds": 1740
+}
